@@ -29,7 +29,6 @@ const FoodItem = ({ id, name, description, price, image }) => {
             <div className="food-item-info">
                 <div className="food-item-name-rating">
                     <p>{name}</p>
-                    <img src={assets.rating_starts} alt="" />
                 </div>
                 <p className="food-item-desc">{truncateDescription(description, 20)}</p>
                 <p className="food-item-price">Rs {price}</p>

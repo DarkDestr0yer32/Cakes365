@@ -9,12 +9,19 @@
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000015;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    /* Add smooth transition effect */
     animation: fadeIn 1s;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     /* Ensure child elements don't overflow */
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #00000030;
+    /* Enhance shadow on hover */
 }
 
 .food-item-image {
@@ -39,10 +46,6 @@
     font-size: 20px;
     font-weight: 500;
     color: #333;
-}
-
-.food-item-name-rating img {
-    width: 70px;
 }
 
 .food-item-desc {
