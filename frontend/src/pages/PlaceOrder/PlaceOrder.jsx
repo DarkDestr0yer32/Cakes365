@@ -92,8 +92,10 @@ const PlaceOrder = () => {
     useEffect(() => {
         if (!token) {
             navigate('/cart')
+            toast.error("You must be Logged In to Order")
         } else if (getTotalCartAmount() === 0) {
             navigate('/cart')
+            toast.error("The cart cannot be empty")
         }
     }, [token])
 
