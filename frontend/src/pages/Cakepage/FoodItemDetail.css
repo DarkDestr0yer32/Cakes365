@@ -1,0 +1,177 @@
+/* Container for the food item detail page */
+.food-item-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Container for image and info sections */
+.food-item-detail-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for the image section */
+.food-item-detail-image {
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.food-item-detail-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Styling for the information section */
+.food-item-detail-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.food-item-detail-info h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.food-item-detail-info p {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.food-item-detail-price {
+    font-size: 1.5rem;
+    color: chocolate;
+    font-weight: bold;
+}
+
+/* Styling for the button container */
+.food-item-detail-button {
+    margin-top: 10px;
+}
+
+/* Styling for the button */
+.food-item-detail-button button {
+    background: transparent;
+    font-size: 14px;
+    color: #49557e;
+    border: 1px solid chocolate;
+    padding: 6px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.food-item-detail-button button:hover {
+    background-color: #fff4f2;
+}
+
+/* Styling for the counter */
+.food-item-detail-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.food-item-detail-counter img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Styling for the review section */
+.reviews-section {
+    margin-top: 20px;
+}
+
+.reviews-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #49557e;
+    /* Matching the theme */
+}
+
+.review {
+    background: #fff4f2;
+    /* Lighter background to match the theme */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e0c0a9;
+    /* Slight border to differentiate reviews */
+}
+
+.review p {
+    margin: 0;
+    font-size: 1rem;
+    color: #49557e;
+    /* Matching the theme */
+}
+
+/* Styling for the review form */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.review-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.review-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: darkorange;
+}
+
+.review-form+p {
+    font-size: 1rem;
+    color: #49557e;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .food-item-detail-top {
+        flex-direction: column;
+    }
+
+    .food-item-detail-info {
+        flex: none;
+    }
+}
