@@ -12,7 +12,7 @@ const razorpay = new Razorpay({
 
 router.post('/place', authMiddleware, async (req, res) => {
 
-    const frontend_url = 'http://localhost:5173';
+    const frontend_url = 'https://cakes365-frontend.onrender.com/';
     const { address, items, amount } = req.body;
     const userId = req.body.userId;
 
