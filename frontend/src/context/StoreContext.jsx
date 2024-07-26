@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
 
     const frontendurl = "http://localhost:5173"
     const [cartItems, setCartItems] = useState({});
-    const url = "http://localhost:4000"
+    const url = "https://cakes365-backend.onrender.com"
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([])
 
